@@ -85,12 +85,13 @@ publishing:
     writeStubs: false
     siteRootDir: docs
     seo:
-        title: Dendron
+        title: Adalbero's Dev KB
         description: Personal Knowledge Space
+        author: Adalbero Fernandes Guimaraes
     github:
         enableEditLink: true
         editLinkText: Edit this page on GitHub
-        editBranch: main
+        editBranch: master
         editViewMode: tree
     enableSiteLastModified: true
     enableFrontmatterTags: true
