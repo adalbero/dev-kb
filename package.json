@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "npx dendron publish dev",
-    "build": "npx dendron publish build"
+    "build": "npx dendron publish export"
   },
   "repository": {
     "type": "git",
