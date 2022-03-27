@@ -101,3 +101,5 @@ publishing:
         action: useVault
         payload:
             - vault
+    siteUrl: adalbero.github.io
+    assetsPrefix: /dev-kb

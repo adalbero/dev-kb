@@ -4,7 +4,8 @@
   "description": "dev-kb",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "npx dendron publish dev",
+    "build": "npx dendron publish build"
   },
   "repository": {
     "type": "git",
