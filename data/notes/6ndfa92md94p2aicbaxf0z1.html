@@ -1,0 +1,67 @@
+<h1 id="rxjx"><a aria-hidden="true" class="anchor-heading" href="#rxjx"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>RxJx</h1>
+<h2 id="higher-order-mapping-operators"><a aria-hidden="true" class="anchor-heading" href="#higher-order-mapping-operators"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Higher-Order Mapping Operators</h2>
+<ul>
+<li>Automatically subscribe to the inner Observable</li>
+<li>Flatten the resulting Observable returning Observable<t> not Observable&#x3C;Observable<t>></t></t></li>
+<li>Automatically unsubscribe from the inner Observable</li>
+</ul>
+<h3 id="switchmap"><a aria-hidden="true" class="anchor-heading" href="#switchmap"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>switchMap</h3>
+<ul>
+<li>Stops the current operation and performs the new operation</li>
+</ul>
+<h3 id="concatmap"><a aria-hidden="true" class="anchor-heading" href="#concatmap"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>concatMap</h3>
+<ul>
+<li>Performs each operation one at a time, in order</li>
+</ul>
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">const</span> urls <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token string">"https://api.mocki.io/v1/0350b5d5"</span><span class="token punctuation">,</span>
+  <span class="token string">"https://api.mocki.io/v1/ce5f60e2"</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword module">from</span><span class="token punctuation">(</span>urls<span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token method function property-access">pipe</span><span class="token punctuation">(</span>
+    <span class="token function">concatMap</span><span class="token punctuation">(</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+      <span class="token keyword control-flow">return</span> <span class="token function">fromFetch</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token method function property-access">subscribe</span><span class="token punctuation">(</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span><span class="token property-access">status</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p><a href="https://indepth.dev/reference/rxjs/operators/concat-map">concatMap</a> - In Depth Dev Reference</p>
+</blockquote>
+<h3 id="mergemap"><a aria-hidden="true" class="anchor-heading" href="#mergemap"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>mergeMap</h3>
+<ul>
+<li>Performs each operation concurrently</li>
+</ul>
+<hr>
+<h2 id="combination-operators"><a aria-hidden="true" class="anchor-heading" href="#combination-operators"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Combination Operators</h2>
+<h3 id="combinelatest"><a aria-hidden="true" class="anchor-heading" href="#combinelatest"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>combineLatest</h3>
+<ul>
+<li>Emits a combined value when any of the observables emit</li>
+<li>Won't emit until all Observables have emitted at least once</li>
+</ul>
+<h3 id="merge"><a aria-hidden="true" class="anchor-heading" href="#merge"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>merge</h3>
+<ul>
+<li>Emits the one value when any of the Observables emit</li>
+</ul>
+<h3 id="forkjoin"><a aria-hidden="true" class="anchor-heading" href="#forkjoin"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>forkJoin</h3>
+<ul>
+<li>When all Observables complete, emit the last value from each Observable into an array</li>
+</ul>
+<hr>
+<h3 id="subject"><a aria-hidden="true" class="anchor-heading" href="#subject"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Subject</h3>
+<ul>
+<li>Special type of Observable that allows values to be multicasted to many Observers</li>
+<li>Like EventEmitters.</li>
+</ul>
+<h3 id="behaivorsubject"><a aria-hidden="true" class="anchor-heading" href="#behaivorsubject"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>BehaivorSubject</h3>
+<ul>
+<li>Variant of <a href="#subject">Subject</a> that requires an initial value and emits its current value whenever it is subscribed to</li>
+</ul>
+<hr>
+<h2 id="references"><a aria-hidden="true" class="anchor-heading" href="#references"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>References</h2>
+<p><strong>RxJsPatterns in Angular</strong></p>
+<p><a href="https://www.youtube.com/watch?v=uv_sblwIJag"><img src="https://img.youtube.com/vi/uv_sblwIJag/0.jpg" alt="Youtube Video"></a></p>
+<hr>
+<h3 id="tags"><a aria-hidden="true" class="anchor-heading" href="#tags"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tags</h3>
+<p><code>#javascript #rsjx</code></p>

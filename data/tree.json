@@ -1,0 +1,147 @@
+{
+  "roots": [
+    {
+      "key": "4zonzkqxzaduh3iagn6ehjx",
+      "title": "Dev KB",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "vault",
+      "children": [
+        {
+          "key": "9f2wxm06ebay6hlhnn9tjcd",
+          "title": "Dev",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "ou4lhga0u85m1nc9wwsyesu",
+              "title": "Angular",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "rz3qv6o56gnz4a22bicdka4",
+              "title": "Git",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "qdstltof3tl58u4swovt1ty",
+                  "title": "Credential",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "foqjixsegbroxirmg778pd1",
+              "title": "Kubernetes",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "aclxk5y4mefh0jv04bwjlgy",
+              "title": "Linux",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "ztbw7pexcsd04rmpfn8nf2t",
+                  "title": "Linux - sed",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                },
+                {
+                  "key": "x8x1wulv5663x030khjn25z",
+                  "title": "Linux - vi",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "ajv1cpk1ajf3cqu7p002ulk",
+              "title": "Markdown",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "l1nu2xl1yf6zgwir7afoxvw",
+              "title": "Powershell",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "ccycuns6suyjut606e2yaud",
+                  "title": "PowerShell - Prompt",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "6ndfa92md94p2aicbaxf0z1",
+              "title": "RxJx",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "8gvt80das6db1ng3z112v01",
+              "title": "VS Code",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "1j4n94ogxe6nvgttg36vw7p",
+              "title": "Windows Terminal",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "child2parent": {
+    "403": null,
+    "4zonzkqxzaduh3iagn6ehjx": null,
+    "9f2wxm06ebay6hlhnn9tjcd": "4zonzkqxzaduh3iagn6ehjx",
+    "l1nu2xl1yf6zgwir7afoxvw": "9f2wxm06ebay6hlhnn9tjcd",
+    "ccycuns6suyjut606e2yaud": "l1nu2xl1yf6zgwir7afoxvw",
+    "1j4n94ogxe6nvgttg36vw7p": "9f2wxm06ebay6hlhnn9tjcd",
+    "8gvt80das6db1ng3z112v01": "9f2wxm06ebay6hlhnn9tjcd",
+    "6ndfa92md94p2aicbaxf0z1": "9f2wxm06ebay6hlhnn9tjcd",
+    "ajv1cpk1ajf3cqu7p002ulk": "9f2wxm06ebay6hlhnn9tjcd",
+    "aclxk5y4mefh0jv04bwjlgy": "9f2wxm06ebay6hlhnn9tjcd",
+    "x8x1wulv5663x030khjn25z": "aclxk5y4mefh0jv04bwjlgy",
+    "ztbw7pexcsd04rmpfn8nf2t": "aclxk5y4mefh0jv04bwjlgy",
+    "foqjixsegbroxirmg778pd1": "9f2wxm06ebay6hlhnn9tjcd",
+    "rz3qv6o56gnz4a22bicdka4": "9f2wxm06ebay6hlhnn9tjcd",
+    "qdstltof3tl58u4swovt1ty": "rz3qv6o56gnz4a22bicdka4",
+    "ou4lhga0u85m1nc9wwsyesu": "9f2wxm06ebay6hlhnn9tjcd"
+  }
+}
