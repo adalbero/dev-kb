@@ -16,7 +16,7 @@
     "url": "https://github.com/adalbero/dev-kb/issues"
   },
   "homepage": "https://github.com/adalbero/dev-kb#readme",
-  "dependencies": {
+  "devDependencies": {
     "@dendronhq/dendron-cli": "^0.87.0"
   }
 }
