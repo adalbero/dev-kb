@@ -1,0 +1,22 @@
+{
+  "name": "dev-kb",
+  "version": "1.0.0",
+  "description": "dev-kb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adalbero/dev-kb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adalbero/dev-kb/issues"
+  },
+  "homepage": "https://github.com/adalbero/dev-kb#readme",
+  "dependencies": {
+    "@dendronhq/dendron-cli": "^0.87.0"
+  }
+}
